@@ -1,0 +1,16 @@
+import random
+bombos = [["Rusia", "Alemania", "Brasil", "Portugal", "Argentina",             "Belgica", "Polonia", "Francia"],
+          ["España", "Perú", "Suiza", "Inglaterra", "Colombia", "Mexico", "Uruguay", "Croacia"],
+          ["Dinamarca", "Islandia", "Costa rica", "Suecia", "Tunez", "Egipto", "Senegal", "Iran"],
+          ["Serbia", "Nigeria", "Australia", "Japón", "Marruecos", "Panama", "CoreadelSur", "Arabia Saudita"]]
+grupo = []
+grupoA = []
+
+for i in bombos:
+  grupoA.append(i[random.randint(0,7)])
+print("grupoA:", grupoA)
+
+grupoB = []
+for i in bombos:
+  grupoB.append(i[random.randint(0,7)])
+print("grupoB:", grupoB)
